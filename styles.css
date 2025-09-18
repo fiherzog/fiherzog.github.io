@@ -387,3 +387,23 @@ audio-player::part(separator) {
 body.mobile audio-player {
 	max-width: 100%;
 }
+
+.page-layout {
+  display: flex;             /* enables side-by-side layout */
+  flex-direction: row;       /* horizontal alignment */
+  align-items: flex-start;   /* top-align content */
+  max-width: 1200px;         /* optional: limit page width */
+  margin: 0 auto;            /* optional: center horizontally */
+}
+
+/* Sidebar */
+.page {
+  flex: 0 0 220px;           /* fixed width for sidebar */
+  padding: 1rem;
+}
+
+/* Main content */
+.page-content {
+  flex: 1;                   /* take up remaining space */
+  padding: 1.4rem;
+}
