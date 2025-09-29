@@ -192,7 +192,7 @@
         .about-header {
             display: flex;
             gap: 3rem;
-            align-items: flex-start;
+            align-items: center;
             margin-bottom: 2rem;
         }
 
@@ -267,6 +267,16 @@
             .work-grid {
                 grid-template-columns: 1fr;
             }
+
+            .about-header {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .about-photo {
+                width: 100%;
+                max-width: 280px;
+            }
         }
     </style>
 </head>
@@ -303,9 +313,16 @@
 
         <div id="about" class="page">
             <div class="about-content">
-                <h2>About</h2>
-                <p>My name is Fiona Herzog. I am an undergraduate student at the University of Pennsylvania with a double major in <em>Computer Science</em> & <em>Communications</em> with a concentration in <em>Data & Network Science.</em></p>
-                <p>I am passionate about utilizing digital tools to convey research, news stories and analysis of the world around us. Feel free to click through the work I have done. My hobbies include running, knitting, crocheting & cooking :)</p>
+                <div class="about-header">
+                    <div class="about-photo">
+                        <img src="your-photo.jpg" alt="Fiona Herzog">
+                    </div>
+                    <div class="about-intro">
+                        <h2>About</h2>
+                        <p>My name is Fiona Herzog. I am an undergraduate student at the University of Pennsylvania with a double major in <em>Computer Science</em> & <em>Communications</em> with a concentration in <em>Data & Network Science.</em></p>
+                        <p>I am passionate about utilizing digital tools to convey research, news stories and analysis of the world around us. Feel free to click through the work I have done. My hobbies include running, knitting, crocheting & cooking :)</p>
+                    </div>
+                </div>
                 
                 <h2>The Long Story</h2>
                 <p>I am a junior at the University of Pennsylvania studying two majors that are seemingly unrelated to get the best of both worlds -- technical skills to convey my understanding of the world around me. At Penn, I have worked hard to find communities to merge my interests to develop meaningful and impactful projects. From Daily Pennsylvanian, I have come to understand how politics and economics work together to influence Philadelphia. Not only have I been able to document this influence with words, I have also been able to convey this influence with data analysis and graphs. At Penn Spark and 34th St, I am able to engage with creative projects that exercise my ability to express myself in way that other people can understand and relate to. I've been able to tie my love for film by being a Film & TV Beat writer for 34th St while making a mini-game centered around film for Spark.</p>
