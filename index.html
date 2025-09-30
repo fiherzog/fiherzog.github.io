@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiona Herzog - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="logo-container" onclick="showPage('about')">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo">
+                </div>
+            </div>
+            <div class="social-links-nav">
+                <a href="https://www.instagram.com/blackberrings/" target="_blank" class="social-item-nav">
+                    <svg class="social-icon-nav" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    <span>@blackberrings</span>
+                </a>
+                <a href="https://www.linkedin.com/in/fionaherzog/" target="_blank" class="social-item-nav">
+                    <svg class="social-icon-nav" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    <span>@fionaherzog</span>
+                </a>
+                <a href="mailto:fionaherzog12@gmail.com" class="social-item-nav email-link">
+                    <svg class="social-icon-nav" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <span>Email Me!</span>
+                </a>
+            </div>
+        </div>
+        <div class="nav-tabs">
+            <a class="nav-tab active" data-page="about">About</a>
+            <a class="nav-tab" data-page="work">Work</a>
+            <a class="nav-tab" data-page="tinkering">Tinkering</a>
+            <a class="nav-tab resume-link" href="https://drive.google.com/file/d/1egkh71tOY0SG86ycjP8wjkGnVn6Lv54p/view" target="_blank">Resume</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div id="about" class="page active">
+            <div class="about-content">
+                <div class="about-header">
+                    <div class="about-photo">
+                        <img src="images/headshot.jpg" alt="Fiona Herzog">
+                    </div>
+                    <div class="about-intro">
+                        <h2>About</h2>
+                        <p>My name is Fiona Herzog. I am an undergraduate student at the University of Pennsylvania with a double major in
+                            <em>Computer Science</em> & <em>Communications</em> with a concentration in <em>Data & Network Science.</em></p>
+                        <p>I am passionate about utilizing digital tools to create. 
+                            My <a href="#" onclick="showPage('work'); return false;" style="color: #a040ff; text-decoration: underline; cursor: pointer;">work</a>
+                            spans digital projects, data-driven journalism, and creative media, all with the goal of creating accessible, meaningful outputs.
+                            My hobbies include running, knitting, crocheting & cooking :)</p>
+                    </div>
+                </div>
+                
+                <h2>The Long Story</h2>
+                <p>I am a junior at the University of Pennsylvania exploring the intersection of technology and communication by building products that translate complex ideas into engaging stories.
+                    My studies in computer science give me the technical skills to design and implement projects, while communications grounds my work in narrative, clarity, and impact.
+                    At The Daily Pennsylvanian, I've combined reporting with data visualization to show how politics and economics shape Philadelphia, turning raw information into clear stories and interactive graphics.
+                    With Penn Spark and 34th Street Magazine, I've built creative projects that bridge media and technology—from designing a
+                    film-inspired mini-game to publishing cultural writing that resonates with a broad audience.</p>
+                <p>For me, creation is a way to connect. Programming has expanded my toolkit for storytelling,
+                    allowing me to prototype products, design visualizations, and develop interactive experiences that make ideas tangible.
+                    Whether I'm building an app, writing an article, or knitting something by hand, I love the process of shaping raw material
+                    into something people can engage with.
+                    When I am not on my computer, I am knitting and exploring Philadelphia. I love art galleries,
+                    experimenting with sandwhich combinations, and talking to my mother over the phone. ♥</p>
+            </div>
+        </div>
+
+        <div id="work" class="page">
+            <h1>Work</h1>
+            <div class="work-grid">
+                <div class="work-card" onclick="showPage('project1')">
+                    <div class="work-image">
+                        <img src="images/work1.jpg" alt="Project One">
+                        <span class="work-season">Fall 2024</span>
+                    </div>
+                    <div class="work-caption">
+                        <h3>Stride</h3>
+                    </div>
+                </div>
+                <div class="work-card" onclick="showPage('project2')">
+                    <div class="work-image">
+                        <img src="images/work2.jpg" alt="Project Two">
+                        <span class="work-season">Summer 2024</span>
+                    </div>
+                    <div class="work-caption">
+                        <h3>Project Two</h3>
+                    </div>
+                </div>
+                <div class="work-card" onclick="showPage('project3')">
+                    <div class="work-image">
+                        <img src="images/work3.jpg" alt="Project Three">
+                        <span class="work-season">Spring 2024</span>
+                    </div>
+                    <div class="work-caption">
+                        <h3>Project Three</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="project1" class="page project-detail">
+            <div class="project-logo-nav">
+                <div class="logo-container" onclick="showPage('work')">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="Logo">
+                    </div>
+                </div>
+            </div>
+            <div class="project-content">
+                <h1 class="project-title">Stride</h1>
+                <a href="https://drive.google.com/file/d/1jMT_3r9PM-nb2xRpqvAQTl48ltEfj2eI/view?usp=sharing" target="_blank" class="project-image-link">
+                    <img src="images/work1.jpg" alt="Stride Project" class="project-detail-image">
+                </a>
+                <div class="project-text">
+                    <p>As one of the designers on <strong>Stride</strong>, I worked on shaping the app's user experience and visual identity to encourage sustainable commuting in Philadelphia. My design process began with <strong>user and stakeholder research</strong>, where I helped synthesize feedback into key design goals: simplicity, transparency, and motivation. Users wanted to clearly see what their commute would look like, track their impact, and feel rewarded for sustainable choices.</p>
+                    <p>From there, I moved into <strong>wireframing and prototyping</strong>, iterating on different approaches for features like onboarding, user profiles, and leaderboards. For onboarding, I designed the concept of a "seed buddy" plant that grows as users save carbon—turning sustainability into something personal, visual, and rewarding. For user profiles, I emphasized clarity and storytelling by combining journey statistics, CO₂ saved, and achievements into a progression-based interface. I also developed the visual system for <strong>gamified elements</strong> such as leaderboards and achievements, making them both intuitive and engaging.</p>
+                    <p>Collaboration was central to my process—I worked closely with developers to ensure feasibility, iterated based on feedback, and prioritized <strong>accessibility and ease of use</strong> across all touchpoints. By balancing playful gamification with functional route-planning and impact tracking, I helped create a product experience that was both engaging and meaningful, transforming routine commutes into opportunities for environmental action and community connection.</p>
+                </div>
+                <div class="figma-link-container">
+                    <a href="https://www.figma.com/design/k9nk0fZpy3cLKQI1VznoIa/social-impact-project?node-id=370-164&t=prcbmnKk0mvQhaAq-1" target="_blank" class="figma-link">View Figma Files</a>
+                </div>
+                <div class="project-images-grid">
+                    <a href="https://www.figma.com/design/k9nk0fZpy3cLKQI1VznoIa/social-impact-project?node-id=370-164&t=prcbmnKk0mvQhaAq-1" target="_blank">
+                        <img src="images/stride1.jpg" alt="Stride Detail 1" class="project-small-image">
+                    </a>
+                    <a href="https://www.figma.com/design/k9nk0fZpy3cLKQI1VznoIa/social-impact-project?node-id=370-164&t=prcbmnKk0mvQhaAq-1" target="_blank">
+                        <img src="images/stride2.jpg" alt="Stride Detail 2" class="project-small-image">
+                    </a>
+                    <a href="https://www.figma.com/design/k9nk0fZpy3cLKQI1VznoIa/social-impact-project?node-id=370-164&t=prcbmnKk0mvQhaAq-1" target="_blank">
+                        <img src="images/stride3.jpg" alt="Stride Detail 3" class="project-small-image">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="project2" class="page project-detail">
+            <div class="project-logo-nav">
+                <div class="logo-container" onclick="showPage('work')">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="Logo">
+                    </div>
+                </div>
+            </div>
+            <div class="project-content">
+                <h1 class="project-title">Street Sweeper</h1>
+                <a href="https://www.34st.com/article/2025/04/magdalena-bay-summer-goat-new-york-city-housemates" target="_blank" class="project-image-link">
+                    <img src="images/work2.jpg" alt="Street Sweeper" class="project-detail-image">
+                </a>
+                <div class="project-text">
+                    <p><em>Street Sweeper</em> is a recurring series produced for <em>34th Street Magazine</em>, an arts and culture publication that is part of <em>The Daily Pennsylvanian</em>, an independent, student-led journalism company at the University of Pennsylvania.</p>
+                    <p>Street Sweeper began after I noticed that Instagram posts about things to do in Philadelphia consistently drove the most click-throughs. I turned that insight into a weekly newsletter and Instagram account designed to connect students with the city around them.</p>
+                    <p>The newsletter combines two threads: dispatches from events that students attend in Philadelphia –concerts, gallery shows, neighborhood festivals–and dispatches from student life itself. Past issues have covered everything from Chappell Roan performing, late-night talks in a notoriously social dorm to the closing of a beloved campus coffee shop. The goal was to make the city feel both accessible and intertwined with everyday student experience.</p>
+                    <p>I built the newsletter template from scratch, iterating on layout, typography, and tone to balance readability with a strong visual identity. Instagram served as a cross-platform companion, translating the same editorial voice into shareable, visual-first content.</p>
+                    <p>Using analytics, open rates, click-throughs, and social engagement, I refined content mix, cadence, and design over time. What began as an observation grew into a multi-channel brand that highlighted how students experience both their campus and their city.</p>
+                </div>
+                <div class="project-images-grid project-images-horizontal">
+                    <a href="https://www.instagram.com/p/DOq8ZX7jtlB/?img_index=2" target="_blank">
+                        <img src="images/sweeper1.jpg" alt="Street Sweeper Detail 1" class="project-horizontal-image">
+                    </a>
+                    <a href="https://www.instagram.com/p/DPMFByEDtLX/?img_index=5" target="_blank">
+                        <img src="images/sweeper2.jpg" alt="Street Sweeper Detail 2" class="project-horizontal-image">
+                    </a>
+                    <a href="https://www.instagram.com/p/DOq8ZX7jtlB/?img_index=2" target="_blank">
+                        <img src="images/sweeper3.jpg" alt="Street Sweeper Detail 3" class="project-horizontal-image">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="project3" class="page project-detail">
+            <div class="project-logo-nav">
+                <div class="logo-container" onclick="showPage('work')">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="Logo">
+                    </div>
+                </div>
+            </div>
+            <div class="project-content">
+                <h1 class="project-title">34th Street Magazine - Assignments Editor</h1>
+                <a href="https://www.34st.com/staff/fiona_herzog" target="_blank" class="project-image-link">
+                    <img src="images/work3.jpg" alt="34th Street Magazine" class="project-detail-image">
+                </a>
+                <div class="project-text">
+                    <p>As Assignments Editor at <em>34th Street Magazine</em>, I lead the development and training of 30 new writers each semester, designing a curriculum that equips them with skills in reporting, narrative voice, and audience engagement. I oversee cross-team collaboration across copy, design, and strategy departments, ensuring that editorial and promotional efforts align seamlessly while maintaining the magazine's distinctive voice. In addition, I coordinate ad placements and sponsored content, integrating revenue-driven initiatives thoughtfully into the editorial calendar, and spearhead long-term content and audience growth strategies to expand the magazine's reach and impact.</p>
+                    <p>Beyond editorial leadership, I have contributed 20+ articles covering a wide range of topics: music, arts, and film to student life and social issues. This helped shape the magazine's identity and connect with a diverse readership. One piece that holds particular significance for me is <a href="https://www.34st.com/article/2025/04/los-angeles-pacific-palisades-wildfire-house-home-community-loss-california-personal-essay" target="_blank" class="article-link"><em>Kindling My Mind's Wildfires</em></a>, a personal essay reflecting on sudden grief for what was once home and the long-term anxiety induced by wildfires in my hometown. Writing this piece challenged me to weave together personal narrative, environmental context, and community response, highlighting the power of storytelling to bridge individual experience and broader societal issues. It remains a defining example of how journalism can engage readers emotionally while provoking reflection and dialogue.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="tinkering" class="page">
+            <h1>Tinkering</h1>
+            <div class="tinkering-list">
+                <div class="tinkering-item">
+                    <div class="tinkering-image">
+                        <img src="images/tinkering1.jpg" alt="Tinkering Project 1">
+                    </div>
+                    <div class="tinkering-caption">
+                        <h3>3-D Koi Fish Pond Puzzle</h3>
+                        <p class="material">Acrylic, Spray Paint, Rhino7, Adobe Illustrator</p>
+                    </div>
+                </div>
+                <div class="tinkering-item">
+                    <div class="tinkering-image">
+                        <img src="images/tinkering2.jpg" alt="Tinkering Project 2">
+                    </div>
+                    <div class="tinkering-caption">
+                        <h3>Riso Prints</h3>
+                        <p class="material">Risograph, Procreate</p>
+                    </div>
+                </div>
+                <div class="tinkering-item">
+                    <div class="tinkering-image">
+                        <img src="images/tinkering3.jpg" alt="Tinkering Project 3">
+                    </div>
+                    <div class="tinkering-caption">
+                        <h3>Crochet Pikachu</h3>
+                        <p class="material">Acrylic Yarn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
