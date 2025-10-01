@@ -162,7 +162,7 @@ strong {
 
 .work-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -221,6 +221,31 @@ strong {
 
 .work-card p {
     display: none;
+}
+
+.additional-work {
+    margin-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+.work-text-block {
+    margin-bottom: 2rem;
+}
+
+.work-text-block p {
+    font-size: 1.3rem;
+    color: #043C15;
+    line-height: 1.4;
+    margin: 0;
+    font-family: Charter, Georgia, serif;
+}
+
+.work-text-block strong {
+    font-weight: 700;
+}
+
+.work-text-block em {
+    font-style: italic;
 }
 
 .work-modal {
