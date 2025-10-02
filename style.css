@@ -576,3 +576,113 @@ strong {
         grid-template-columns: 1fr;
     }
 }
+
+/* Add these styles to your existing CSS */
+
+.project-collage {
+    max-width: 900px;
+    margin: 3rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.collage-row-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.collage-row-2 {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.collage-row-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.collage-image-1 {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    aspect-ratio: 793/668;
+    object-fit: cover;
+    border-radius: 4px;
+    flex: 793;
+}
+
+.collage-image-2 {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    aspect-ratio: 793/233;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.collage-image-3 {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    aspect-ratio: 1652/752;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.collage-image-4 {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    aspect-ratio: 991/500;
+    object-fit: cover;
+    border-radius: 4px;
+    flex: 991;
+}
+
+.collage-row-4 {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.collage-image-5 {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 1074/725;
+    object-fit: cover;
+    border-radius: 4px;
+    flex: 1074;
+}
+
+.collage-image-6 {
+    width: 100%;
+    max-width: 580px;
+    height: auto;
+    aspect-ratio: 3946/1419;
+    object-fit: cover;
+    border-radius: 4px;
+    flex: 3946;
+}
+
+/* Responsive adjustments for collage */
+@media (max-width: 768px) {
+    .collage-row-2,
+    .collage-row-4 {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .collage-image-1,
+    .collage-image-2,
+    .collage-image-3,
+    .collage-image-4,
+    .collage-image-5,
+    .collage-image-6 {
+        max-width: 100%;
+    }
+}
